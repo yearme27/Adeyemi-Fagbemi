@@ -24,12 +24,11 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class SearchWeatherActivity : AppCompatActivity() {
-
+    //Initialize view-model
     private lateinit var viewModel: WeatherViewModel
 
-    // Declare FusedLocationProviderClient
+    // Declare FusedLocationProviderClient for device location
     private lateinit var fusedLocationClient: FusedLocationProviderClient
-    // Initializing the views
     // Declare your views
     private lateinit var cityEditText: EditText
     private lateinit var searchButton: Button
